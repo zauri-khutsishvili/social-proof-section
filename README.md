@@ -4,7 +4,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ## Links
 
-- Solution URL: [https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-nggIlOC6xk](https://www.frontendmentor.io/solutions/social-proof-section-nggIlOC6xk)
 - Live Site URL: [https://zauri-khutsishvili.github.io/social-proof-section/](https://zauri-khutsishvili.github.io/social-proof-section/)
 
 ## Built with
