@@ -51,11 +51,11 @@ a {
   max-width: 44.5rem;
 }
 .social-proof-header__title {
-  font-size: 5.6rem;
+  font-size: 5.575rem;
   font-weight: 700;
   color: var(--very-dark-magenta);
   line-height: 0.86em;
-  letter-spacing: -0.036em;
+  letter-spacing: -0.035em;
   margin-bottom: 2.6rem;
 }
 .social-proof-header__description {
