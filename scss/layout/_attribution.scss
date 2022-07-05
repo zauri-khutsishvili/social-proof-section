@@ -1,0 +1,22 @@
+.attribution {
+    position: absolute;
+    bottom: 1em;
+    font-size: 1.4rem;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--dark-grayish-magenta);
+    text-align: center;
+    opacity: .98;
+
+    a {
+        transition: .12s;
+        color: var(--dark-grayish-magenta);
+    }
+    
+    a:hover {
+        color: var(--very-dark-magenta);
+    }
+    
+    a:active {
+        color: var(--soft-pink);
+    }
+}

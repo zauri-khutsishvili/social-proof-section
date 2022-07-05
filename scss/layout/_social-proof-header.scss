@@ -1,0 +1,35 @@
+@use '../util' as u;
+
+.social-proof-header {
+    place-self: start;
+    grid-column: span 1;
+    max-width: 44.5rem;
+
+    &__title {
+        font-size: 5.6rem;
+        font-weight: 700;
+        color: var(--very-dark-magenta);
+        line-height: .86em;
+        letter-spacing: -0.036em;
+        margin-bottom: 2.6rem;
+    }
+
+    &__description {
+        font-size: 1.9rem;
+        font-weight: 500;
+        color: var(--dark-grayish-magenta);
+        line-height: 1.32em;
+        letter-spacing: -0.0333em;
+    }
+
+    @include u.breakpoint(tablet) {
+        justify-self: center;
+        text-align: center;
+    
+        &__title {
+            font-size: 4rem;
+            line-height: .8em;
+            margin-bottom: 2.2rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@forward 'globals';
+@forward 'util';
+@forward 'layout';
+@use 'util' as u;
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 0, bottom 0 right 0;
+    position: relative;
+
+    @include u.breakpoint(tablet) {
+        height: auto;
+        background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 0 right 0, bottom 0 left 0;
+        align-items: flex-start;
+    }
+}

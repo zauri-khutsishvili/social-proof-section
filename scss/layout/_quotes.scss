@@ -1,0 +1,83 @@
+@use '../util' as u;
+
+.quotes {
+    place-self: end center;
+    grid-column: span 2;
+    max-width: 111rem;
+    min-height: 26.6rem;
+    margin-top: 4.9rem;
+    display: flex;
+    justify-content: space-between;
+    gap: calc(3 / 111 * 100%);
+
+    &__quote {
+        background-color: var(--very-dark-magenta);
+        width: calc(35 / 111 * 100%);
+        min-height: 23.4rem;
+        padding: 4rem 3.2rem 3.2rem 3.2rem;
+        border-radius: .8rem;
+    }
+
+    &__buyer-pic {
+        width: 4rem;
+        vertical-align: middle;
+        border-radius: 50%;
+        margin-right: 2.3rem;
+    }
+
+    &__buyer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.7rem;
+    }
+
+    &__buyer-name {
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-top: 0.2rem;
+        margin-bottom: .4rem;
+    }
+
+    &__verified-buyer {
+        color: var(--soft-pink);
+        font-size: 1.7rem;
+    }
+
+    &__text {
+        color: white;
+        font-size: 1.7rem;
+        line-height: 1.295em;
+        letter-spacing: -0.009em;
+    }
+
+    &__colton-smith {
+        align-self: flex-start;
+    }
+    
+    &__irene-roberts {
+        align-self: center;
+    }
+    
+    &__anne-wallace {
+        align-self: flex-end;
+    }
+
+    @include u.breakpoint(tablet) {
+        grid-column: span 1;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        &__colton-smith, 
+        &__irene-roberts,
+        &__anne-wallace {
+            align-self: flex-start;
+        }
+
+        &__quote {
+            width: 100%;
+            min-height: 1rem;
+            padding: 4rem 3.2rem 3.1rem 3.2rem;
+        }
+    }
+}
