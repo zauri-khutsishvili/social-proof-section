@@ -49,6 +49,7 @@ a {
   place-self: start;
   grid-column: span 1;
   max-width: 44.5rem;
+  min-width: 33.4rem;
 }
 .social-proof-header__title {
   font-size: 5.575rem;
@@ -198,6 +199,11 @@ a {
 }
 .quotes__anne-wallace {
   align-self: flex-end;
+}
+@media (max-width: 64.8125em) {
+  .quotes__irene-roberts, .quotes__anne-wallace {
+    align-self: stretch;
+  }
 }
 @media (max-width: 53.125em) {
   .quotes {

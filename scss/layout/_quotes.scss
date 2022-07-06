@@ -63,6 +63,13 @@
         align-self: flex-end;
     }
 
+    @media (max-width: 64.8125em) {
+        &__irene-roberts,
+        &__anne-wallace {
+            align-self: stretch;
+        }
+    }
+
     @include u.breakpoint(tablet) {
         grid-column: span 1;
         flex-direction: column;
