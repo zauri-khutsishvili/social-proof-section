@@ -1,4 +1,4 @@
-@use '../util' as u;
+@use '../abstracts' as a;
 
 .social-proof-header {
     place-self: start;
@@ -23,7 +23,8 @@
         letter-spacing: -0.0333em;
     }
 
-    @include u.breakpoint(tablet) {
+    @include a.breakpoint(tablet) {
+        min-width: .1rem;
         justify-self: center;
         text-align: center;
     

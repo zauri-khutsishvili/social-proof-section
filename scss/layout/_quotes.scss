@@ -1,4 +1,4 @@
-@use '../util' as u;
+@use '../abstracts' as a;
 
 .quotes {
     place-self: end center;
@@ -70,7 +70,7 @@
         }
     }
 
-    @include u.breakpoint(tablet) {
+    @include a.breakpoint(tablet) {
         grid-column: span 1;
         flex-direction: column;
         gap: 1.6rem;

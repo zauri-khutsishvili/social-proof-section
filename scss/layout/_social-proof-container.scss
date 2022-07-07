@@ -1,4 +1,23 @@
-@use '../util' as u;
+@use '../abstracts' as a;
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 0, bottom 0 right 0;
+    position: relative;
+
+    @include a.breakpoint(tablet) {
+        height: auto;
+        background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 0 right 0, bottom 0 left 0;
+        align-items: flex-start;
+    }
+}
 
 .social-proof-container {
     margin: 1.8rem 4.5rem 0;
@@ -11,7 +30,7 @@
     justify-items: center;
     align-items: center;
 
-    @include u.breakpoint(tablet) {
+    @include a.breakpoint(tablet) {
         grid-template-columns: 1;
         grid-template-rows: 3;
         max-width: 60rem;

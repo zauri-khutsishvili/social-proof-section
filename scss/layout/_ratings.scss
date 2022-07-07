@@ -1,4 +1,4 @@
-@use '../util' as u;
+@use '../abstracts' as a;
 
 .ratings {
     place-self: start end;
@@ -46,7 +46,7 @@
         vertical-align: middle;
     }
 
-    @include u.breakpoint(tablet) {
+    @include a.breakpoint(tablet) {
         padding-left: 0;
         margin-top: 3.9rem;
         max-width: 52rem;
@@ -57,9 +57,9 @@
             padding: 0 4.8rem;
         }
 
-        @include u.breakpoint(phone) {
+        @include a.breakpoint(phone) {
             &__rating {
-                height: 7.8rem;
+                min-height: 7.8rem;
                 padding: 0;
                 flex-direction: column;
                 justify-content: center;
